@@ -1,0 +1,57 @@
+Software Quality Assurance Plan
+
+Purpose and Scope
+
+The main purpose of this SQA is basically ensuring the practices are reliable, maintainable, and reliable eventually of the DATETIMEChecker implementations and its associated Junit test classes. And, this plan is applicable on delivereies in this project’s phase 1 that includes all the codes, tests, the GitHub processes and supported documentations.
+
+The QA process covered the following things:
+a.	Code Implementation in DateTimeChecker.java
+b.	DATE AND DATETIME – Unit tests in CheckDateTimeStringTest.java
+c.	Documentations such as README.md, phase 1 project’s .md file (project-phase1-report.md)
+d.	All the Pull Requests, its corresponding reviews, and Github checks (Automtated)
+
+Practices And Standards
+
+For the consistency throughout the project, the following standard were adopted by our team:
+a.	Coding style : Descriptive method and variable names, consistent coding style, accurate indentation, and use of modular helper methods that basically makes the code self-documenting and easily maintainable. The methods included  checkIsALLDigits, daysInMonth, isLeapYear, and isOnOrAfterToday.
+b.	Restrictions : no use of System.out or System.err
+c.	Testing : As per the project, Junit tests much included valid, invalid, and edge cases. For example:
+-	DATE tests : today, future date, leap year.
+-	Invalid: past date i.e., yesterday, month = 15, day = 40, non leap year.
+-	Formatting errors : missing zeroes, alphabetic input, slashes.
+
+Activites and Tasks
+
+Peer reviews were applied in our quality assurance strategy supported by the GitHub workflow.
+
+a.	Branching Policy : All works have been developed on feature branches.
+b.	Pull Requests: Merging of all codes have been done via pull requests.
+c.	Reviews : Each Pull request have been reviewed by at least 2 non authors. 
+d.	Correction : Before making any final changes/merging anything, authors made the changes to the reviewers comments. 
+e.	Checks on GitHub : While no full CI/CD pipeline was used, whether markdown files were built correctly or whether PRs were merged cleanly, was indicated automatically by Github.
+
+Tools and Methods
+
+
+a.	Github:  Version Control, Pull Requests workflow and reviewing.
+b.	Junit : For the unit testing of DATETIME and DATE validation logic.
+c.	Self/Local execution of tests by authors and reviewers (not the automated pipelines)
+
+Records and Evidence
+
+Evidence of QA is recorded in the repository:
+
+-	PR – Implementation of DateTimeChecker.java : 
+-	PR – Junit test suite for DATE :
+-	PR – Junit test suite for DATETIME
+
+Roles and Responsibilities
+
+-	Developers : Implementing the codes and writing them down.
+-	Testers : Tests were created by them that included test cases for valid, invalid, and edge case scenarios.
+-	Reviewers: They examined the pull requests, left meaningful comments respectively, and approved when all the standards were satisfied.
+-	Repository manager: Merged all the pull requests once the approvals were complete.
+
+Conclusion
+
+This full SQA plan tells us how the project’s phase 1 quality has been maintained throughout with the coding standards, design, Javadoc documentation, systematic testing, and Github peer reviews. It was ensured that deliverables have respectable quality, met project requirements, all by the structures review process and comprehensive test coverages.
